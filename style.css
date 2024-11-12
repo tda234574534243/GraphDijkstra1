@@ -146,7 +146,6 @@ text {
     .container-fluid {
         /* Chiếm toàn bộ chiều rộng và chiều cao của màn hình */
         width: 100vw;  /* Chiếm toàn bộ chiều rộng của màn hình */
-        height: 100vh; /* Chiếm toàn bộ chiều cao của màn hình */
         background-image: url("./images/pexels-8moments-1323550.jpg");
         background-repeat: no-repeat;
         background-size: cover;   /* Để hình ảnh co giãn cho phù hợp */
