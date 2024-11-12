@@ -149,7 +149,7 @@ text {
         top: 0; /* Đặt phần tử ở trên cùng */
         left: 0; /* Đặt phần tử ở bên trái */
         width: 100vw;  /* Chiếm toàn bộ chiều rộng của màn hình */
-        height: 800vm; /* Chiếm toàn bộ chiều cao của màn hình */
+        height: 300vw; /* Chiếm toàn bộ chiều cao của màn hình */
         background-image: url("./images/pexels-8moments-1323550.jpg");
         background-repeat: no-repeat;
         background-size: cover;   /* Để hình ảnh co giãn cho phù hợp */
