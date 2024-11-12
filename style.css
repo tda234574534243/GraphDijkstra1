@@ -154,6 +154,9 @@ text {
         object-fit: cover; /* Đảm bảo nội dung bao phủ toàn bộ không gian */
         margin: 0; /* Đảm bảo không có margin làm cho có khoảng trắng */
         padding: 0; /* Xóa bỏ padding nếu có */
+        position: absolute; /* Giúp đảm bảo ảnh không bị ảnh hưởng bởi các phần tử khác */
+        top: 0; /* Đặt ảnh ở vị trí trên cùng */
+        left: 0; /* Đặt ảnh ở vị trí bên trái */
     }
      /* Đảm bảo body và html không có margin hoặc padding */
      html, body {
