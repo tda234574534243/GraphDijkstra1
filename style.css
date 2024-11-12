@@ -136,14 +136,20 @@ text {
 }
 
 @media only screen and (max-width: 768px) {
-    /* Chỉ áp dụng trên màn hình điện thoại */
+    /* Chỉ áp dụng trên màn hình điện thoại */
+    .icons {
+        display: flex; /* Sử dụng flexbox để sắp xếp các icon */
+        justify-content: space-between; /* Căn đều các icon với khoảng cách giữa chúng */
+        align-items: center; /* Căn giữa các icon theo chiều dọc */
+        overflow: hidden; /* Giới hạn không cho các phần tử tràn ra ngoài */
+    }
     .container-fluid {
-        /* Chiếm toàn bộ chiều cao của màn hình */
-        width: 100vw;  /* Chiếm toàn bộ chiều rộng của màn hình */
+        /* Chiếm toàn bộ chiều rộng và chiều cao của màn hình */
+        width: 100vw;  /* Chiếm toàn bộ chiều rộng của màn hình */ /* Chiếm toàn bộ chiều cao của màn hình */
         background-image: url("./images/pexels-8moments-1323550.jpg");
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        object-fit: cover;
+        background-size: cover;   /* Để hình ảnh co giãn cho phù hợp */
+        background-position: center; /* Cặn giữ hình ảnh ở giữa */
+        object-fit: cover; /* Đảm bảo nội dung bao phủ toàn bộ không gian */
     }
 }
