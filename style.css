@@ -135,34 +135,46 @@ text {
     }
 }
 
-@media only screen and (max-width: 868px) {
-    /* Chỉ áp dụng trên màn hình điện thoại */
-    .icons {
-        display: flex; /* Sử dụng flexbox để sắp xếp các icon */
-        justify-content: space-between; /* Căn đều các icon với khoảng cách giữa chúng */
-        align-items: center; /* Căn giữa các icon theo chiều dọc */
-        overflow: hidden; /* Giới hạn không cho các phần tử tràn ra ngoài */
-    }
-    /* Đảm bảo .container-fluid chiếm toàn bộ trang mà không có khoảng trắng */
-    .container-fluid {
-        position: absolute; /* Đảm bảo .container-fluid phủ toàn bộ trang */
-        top: 0; /* Đặt phần tử ở trên cùng */
-        left: 0; /* Đặt phần tử ở bên trái */
-        width: 100vw;  /* Chiếm toàn bộ chiều rộng của màn hình */
-        height: 500vw; /* Chiếm toàn bộ chiều cao của màn hình */
-        background-image: url("./images/pexels-8moments-1323550.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;   /* Để hình ảnh co giãn cho phù hợp */
-        background-position: center; /* Giữ hình ảnh ở giữa */
-        object-fit: cover; /* Đảm bảo nội dung bao phủ toàn bộ không gian */
-        margin: 0; /* Loại bỏ margin */
-        padding: 0; /* Loại bỏ padding */
+@media (max-width: 768px) {
+    /* Điều chỉnh cho .box-right .findPath */
+    .box-right .findPath {
+        width: 90%; /* Giảm chiều rộng của nút */
+        max-width: 140px; /* Giảm tối đa chiều rộng */
+        height: 40px; /* Giảm chiều cao */
+        font-size: 12px; /* Giảm kích thước chữ trong nút */
+        padding: 0 10px; /* Thêm padding cho nút để phù hợp với kích thước nhỏ */
     }
 
-    /* Loại bỏ margin và padding của html và body */
-    html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%; /* Đảm bảo chiều cao chiếm toàn bộ màn hình */
+    /* Điều chỉnh kích thước chữ của text */
+    text {
+        font-size: 12px; /* Giảm kích thước font chữ trên các màn hình nhỏ */
+    }
+
+    /* Điều chỉnh border và shadow cho phù hợp */
+    .box-right .findPath:hover {
+        box-shadow: 0 0 10px 8px rgba(240, 39, 39, 0.6); /* Giảm kích thước shadow */
+        transform: translateY(-5px); /* Giảm hiệu ứng hover */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Điều chỉnh cho .box-right .findPath */
+    .box-right .findPath {
+        width: 85%; /* Giảm hơn nữa chiều rộng */
+        max-width: 120px; /* Giảm tối đa chiều rộng */
+        height: 35px; /* Giảm chiều cao */
+        font-size: 10px; /* Giảm kích thước chữ */
+        padding: 0 8px; /* Thêm padding nhỏ hơn */
+    }
+
+    /* Điều chỉnh text cho các màn hình cực nhỏ */
+    text {
+        font-size: 10px; /* Giảm kích thước font chữ thêm nữa */
+    }
+
+    /* Điều chỉnh hiệu ứng hover */
+    .box-right .findPath:hover {
+        box-shadow: 0 0 8px 6px rgba(240, 39, 39, 0.6); /* Giảm shadow hơn */
+        transform: translateY(-3px); /* Giảm hiệu ứng hover trên màn hình nhỏ */
     }
 }
