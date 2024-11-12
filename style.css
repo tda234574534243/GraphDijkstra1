@@ -145,11 +145,20 @@ text {
     }
     .container-fluid {
         /* Chiếm toàn bộ chiều rộng và chiều cao của màn hình */
-        width: 100vw;  /* Chiếm toàn bộ chiều rộng của màn hình */ /* Chiếm toàn bộ chiều cao của màn hình */
+        width: 100vw;  /* Chiếm toàn bộ chiều rộng của màn hình */
+        height: 100vh; /* Chiếm toàn bộ chiều cao của màn hình */
         background-image: url("./images/pexels-8moments-1323550.jpg");
         background-repeat: no-repeat;
         background-size: cover;   /* Để hình ảnh co giãn cho phù hợp */
         background-position: center; /* Cặn giữ hình ảnh ở giữa */
         object-fit: cover; /* Đảm bảo nội dung bao phủ toàn bộ không gian */
+        margin: 0; /* Đảm bảo không có margin làm cho có khoảng trắng */
+        padding: 0; /* Xóa bỏ padding nếu có */
+    }
+     /* Đảm bảo body và html không có margin hoặc padding */
+     html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%; /* Đảm bảo chiều cao chiếm toàn bộ màn hình */
     }
 }
